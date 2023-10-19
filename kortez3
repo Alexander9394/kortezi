@@ -1,0 +1,8 @@
+def sieve(DD):
+    a = []
+    [a.append(item) for item in reversed(DD) if item not in a]
+    return tuple(a)
+print(sieve([4, 1, 5, 6, 8, 7]))
+print(sieve([1, 6, 7, 2, 3, 4, 5, 10, 9, 0]))
+print(sieve((1, 2, 10, 6, 1, 9, 6, 4, 6, 8)))
+print(sieve((6, 9, 5, 11, 2, 4, 3, 13,)))
